@@ -7,7 +7,7 @@ function App() {
   return (
     <>
      Hello world
-     this is the first page
+     this is my first attempt to glory
     </>
   )
 }
