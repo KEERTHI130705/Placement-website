@@ -20,7 +20,7 @@ const messages = [
 
 const MessagesSection = () => {
   return (
-    <section className="messages-section">
+    <section id="messages" className="messages-section">
       <h2 className="messages-heading">Messages from TPO</h2>
       <div className="carousel-container">
         <Carousel
