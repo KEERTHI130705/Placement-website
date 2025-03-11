@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
-import "./Header.css";
+import "../Styles/Header.css";
 import logo from "../assets/image.png";
 
 

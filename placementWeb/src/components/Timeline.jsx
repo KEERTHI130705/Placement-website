@@ -1,6 +1,6 @@
 import React from "react";
 import { Mail, FileText, CheckCircle, Code, Users, Award } from "lucide-react";
-import "../assets/Timeline.css"; // Import the CSS file
+import "../Styles/Timeline.css"; // Import the CSS file
 
 
 
