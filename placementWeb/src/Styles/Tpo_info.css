@@ -1,0 +1,51 @@
+.tpo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Matches your color scheme */
+    padding: 50px 0;
+  }
+  
+  .tpo-content {
+    display: flex;
+    max-width: 1100px;
+    width: 90%;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .tpo-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  .tpo-info {
+    color:rgb(93, 0, 255);
+    max-width: 500px;
+  }
+  
+  .tpo-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #fa3415; /* Gold color for highlight */
+  }
+  
+  .tpo-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .tpo-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .tpo-image img {
+      max-width: 100%;
+    }
+  }
+  

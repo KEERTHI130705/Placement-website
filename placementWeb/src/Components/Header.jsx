@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import "../Styles/Header.css";
-import logo from "../assets/image.png";
+import logo from "../assets/logo1.png";
 
 
 const Header = () => {
@@ -21,8 +21,8 @@ const Header = () => {
         <nav className="nav">
           {[
             { id: "home", label: "HOME" },
-            { id: "tpo-info", label: "TPO INFO" },
-            { id: "why-recruit", label: "WHY RECRUIT" },
+            // { id: "tpo-info", label: "TPO INFO" },
+            // { id: "why-recruit", label: "WHY RECRUIT" },
             { id: "achievements", label: "ACHIEVEMENTS" },
             { id: "messages", label: "MESSAGES" },
             { id: "process", label: "PROCESS" },

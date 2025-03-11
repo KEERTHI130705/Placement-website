@@ -1,7 +1,7 @@
 /* Header.css */
 
 .header {
-    background-color: #1e3a8a;
+    background-color: #3881d3;
     color: white;
     position: fixed;
     top: 0;
@@ -40,7 +40,7 @@
   
   .nav {
     display: flex;
-    gap: 20px;
+    gap: 40px;
   }
   
   .nav-item {

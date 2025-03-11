@@ -15,6 +15,7 @@ const timelineEvents = [
   
   const Timeline = () => {
     return (
+      <section id="process">
       <div className="timeline-container">
         <h2 className="timeline-title">Placements Timeline</h2>
         <div className="timeline">
@@ -30,6 +31,7 @@ const timelineEvents = [
           ))}
         </div>
       </div>
+      </section>
     );
   };
   
