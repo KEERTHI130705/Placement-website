@@ -16,7 +16,7 @@ const timelineEvents = [
   const Timeline = () => {
     return (
       <div className="timeline-container">
-        <h2 className="timeline-title">Placement Timeline</h2>
+        <h2 className="timeline-title">Placements Timeline</h2>
         <div className="timeline">
           {timelineEvents.map((event, index) => (
             <div key={index} className="timeline-item">
