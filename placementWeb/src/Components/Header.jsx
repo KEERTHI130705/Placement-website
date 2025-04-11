@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "../Styles/Header.css";
 import logo from "../assets/logo1.png";
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,18 +11,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        {/* Logo - Clicking this scrolls to Home */}
-        <Link to="home" smooth={true} duration={500} offset={-80} className="logo">
+        {/* Logo - Routes to homepage */}
+        <RouterLink to="/" className="logo">
           <img src={logo} alt="UCEOU Logo" className="logo-img" />
           <span className="logo-text">UCEOU Placements</span>
-        </Link>
+        </RouterLink>
 
         {/* Desktop Menu */}
         <nav className="nav">
+          <RouterLink to="/" className="nav-item">HOME</RouterLink>
           {[
-            { id: "home", label: "HOME" },
-            // { id: "tpo-info", label: "TPO INFO" },
-            // { id: "why-recruit", label: "WHY RECRUIT" },
             { id: "achievements", label: "ACHIEVEMENTS" },
             { id: "messages", label: "MESSAGES" },
             { id: "process", label: "PROCESS" },
@@ -30,17 +28,17 @@ const Header = () => {
             { id: "recruiters", label: "RECRUITERS" },
             { id: "contact", label: "CONTACT" },
           ].map((item) => (
-            <Link
+            <ScrollLink
               key={item.id}
               to={item.id}
               smooth={true}
               duration={500}
               spy={true}
-              offset={-70} // Adjust for fixed header
+              offset={-70}
               className="nav-item"
             >
               {item.label}
-            </Link>
+            </ScrollLink>
           ))}
         </nav>
 
@@ -54,8 +52,8 @@ const Header = () => {
       {isOpen && (
         <div className="mobile-menu">
           <nav className="mobile-nav">
+            <RouterLink to="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>HOME</RouterLink>
             {[
-              { id: "home", label: "HOME" },
               { id: "tpo-info", label: "TPO INFO" },
               { id: "why-recruit", label: "WHY RECRUIT" },
               { id: "achievements", label: "ACHIEVEMENTS" },
@@ -65,7 +63,7 @@ const Header = () => {
               { id: "recruiters", label: "RECRUITERS" },
               { id: "contact", label: "CONTACT" },
             ].map((item) => (
-              <Link
+              <ScrollLink
                 key={item.id}
                 to={item.id}
                 smooth={true}
@@ -76,12 +74,11 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
-              </Link>
+              </ScrollLink>
             ))}
           </nav>
-          
+
           <img src={logo} alt="UCEOU Logo" className="logo-img" />
-        
         </div>
       )}
     </header>
