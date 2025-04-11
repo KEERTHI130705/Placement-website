@@ -1,8 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../Styles/HomeBanner.css"; // Import CSS file
 import videoSrc from "../assets/banner1.mp4"; // Your video path
 
 const HomeBanner = () => {
+  const navigate = useNavigate();
+
+  const handleStudentClick = () => {
+    navigate("/student-login");
+  };
+
+  const handleRecruiterClick = () => {
+    navigate("/recruiter-login");
+  };
+
   return (
     <div className="banner-container">
       <video autoPlay loop muted playsInline className="banner-video">
@@ -20,8 +31,8 @@ const HomeBanner = () => {
           hiring process.
         </p>
         <div className="banner-buttons">
-          <button className="btn">👨‍🎓 Student</button>
-          <button className="btn">💼 Recruiter</button>
+          <button className="btn" onClick={handleStudentClick}>👨‍🎓 Student</button>
+          <button className="btn" onClick={handleRecruiterClick}>💼 Recruiter</button>
         </div>
       </div>
     </div>
