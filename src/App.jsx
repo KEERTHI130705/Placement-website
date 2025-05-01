@@ -9,6 +9,7 @@ import Timeline from "./Components/Timeline";
 import HomeBanner from './Components/Homebanner';
 import StudentLogin from './Components/StudentLogin';
 import RecruiterLogin from './Components/RecruiterLogin';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Tpo_info />
             <MessagesSection />
             <Timeline />
+            <Footer/>
           </>
         } />
         <Route path="/student-login" element={<StudentLogin />} />
