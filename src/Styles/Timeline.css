@@ -1,7 +1,7 @@
 /* Main container */
 .timeline-container {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 100%;
+    margin: 0px auto;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -104,7 +104,8 @@
   
   /* Content boxes */
   .timeline-content {
-    width: 40%;
+   
+     width: 20%;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(15px);
     padding: 20px;
