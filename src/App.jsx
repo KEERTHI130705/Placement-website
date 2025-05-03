@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
-import Home from './Components/Homebanner'
 import './App.css';
 import Tpo_info from './Components/Tpo_info'
 import MessagesSection from './Components/tpo_messages';
