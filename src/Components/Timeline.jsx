@@ -5,13 +5,11 @@ import "../Styles/Timeline.css"; // Import the CSS file
 
 
 const timelineEvents = [
-    { date: "July 03, onwards", title: "Sending Invites", desc: "Sending invites to companies for recruitment.", icon: <Mail size={28} color="#007bff" /> },
-    { date: "Aug 07 to 14", title: "Student Registration", desc: "Students register for placements.", icon: <FileText size={28} color="#007bff" /> },
-    { date: "Aug 15 to 27", title: "Application Screening", desc: "Companies review student applications.", icon: <CheckCircle size={28} color="#007bff" /> },
-    { date: "Aug 16, onwards", title: "Online Assessments", desc: "Technical and aptitude tests.", icon: <Code size={28} color="#007bff" /> },
-    { date: "Aug 30, onwards", title: "Interviews", desc: "Companies conduct interviews for shortlisted candidates.", icon: <Users size={28} color="#007bff" /> },
-    { date: "Sep 10, onwards", title: "Offers & Joining", desc: "Companies extend offers and students accept them.", icon: <Award size={28} color="#007bff" /> }
-  ];
+    { date: "June 08, onwards", title: "Student Registrations", desc: "Students are instructed to register for the placements", icon: <Mail size={28} color="#007bff" /> },
+    { date: "June to September", title: "Product Based Companies", desc: "Product based companies conduct their hiring process during this time", icon: <FileText size={28} color="#007bff" /> },
+    { date: "Oct to Dec", title: "Service Based Companies", desc: "Service based companies conduct their hiring process during this time", icon: <CheckCircle size={28} color="#007bff" /> },
+    { date: "December onwards", title: "Core Companies", desc: "Hiring process for Core companies begins", icon: <Code size={28} color="#007bff" /> },
+    ];
   
   const Timeline = () => {
     return (

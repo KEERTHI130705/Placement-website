@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="footer-left">
   <h3 className="footer-heading">Office Address</h3>
   <p>Training & Placement Cell</p>
-  <p>XYZ College of Engineering</p>
-  <p>123 College Road, City, State - 000000</p>
+  <p>University College of Engineering Osmania University</p>
+  <p>Osmania University main Road, Amberpet, Hyderabad - 500044</p>
 
   {/* Google Map Embed */}
   <div className="map-container">
@@ -48,12 +48,12 @@ const Footer = () => {
           {/* TPO Info */}
           <div className="footer-section">
             <h3 className="footer-subheading">TPO Information</h3>
-            <p>Mr. John Doe</p>
+            <p>Dr.D.Suman</p>
             <p>Training & Placement Officer</p>
             <p>
               Email:{" "}
-              <a href="mailto:tpo@xyzcollege.edu" className="footer-link">
-                tpo@xyzcollege.edu
+              <a href="mailto:ouceplacements@osmania.ac.in" className="footer-link">
+              ouceplacements@osmania.ac.in
               </a>
             </p>
             <p>Phone: +91-98765-43210</p>
@@ -63,7 +63,7 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} XYZ College. All rights reserved.
+        © {new Date().getFullYear()} UCEOU. All rights reserved.
       </div>
     </footer>
   );

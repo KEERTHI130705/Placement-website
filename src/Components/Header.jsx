@@ -14,19 +14,19 @@ const Header = () => {
         {/* Logo - Routes to homepage */}
         <RouterLink to="/" className="logo">
           <img src={logo} alt="UCEOU Logo" className="logo-img" />
-          <span className="logo-text">UCEOU Placements</span>
+          <span className="logo-text">Training & Placement Office</span>
         </RouterLink>
 
         {/* Desktop Menu */}
         <nav className="nav">
-          <RouterLink to="/" className="nav-item">HOME</RouterLink>
+          <RouterLink to="/" className="nav-item">Home</RouterLink>
           {[
-            { id: "achievements", label: "ACHIEVEMENTS" },
-            { id: "messages", label: "MESSAGES" },
-            { id: "process", label: "PROCESS" },
-            { id: "statistics", label: "STATISTICS" },
-            { id: "recruiters", label: "RECRUITERS" },
-            { id: "contact", label: "CONTACT" },
+            { id: "achievements", label: "Achievements" },
+            { id: "messages", label: "Messages" },
+            { id: "process", label: "Timeline" },
+            { id: "statistics", label: "Statistics" },
+            { id: "recruiters", label: "Recruiters" },
+            { id: "contact", label: "Contact" },
           ].map((item) => (
             <ScrollLink
               key={item.id}
