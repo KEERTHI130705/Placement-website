@@ -10,6 +10,7 @@ import StudentLogin from './Components/StudentLogin';
 import RecruiterLogin from './Components/RecruiterLogin';
 import Footer from './Components/Footer';
 import RecruitersGrid from './Components/RecruitersGrid';
+import Statistics from './Components/Statistics';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
             <HomeBanner />
             <Tpo_info />
             <MessagesSection />
+            <Statistics/>
+
             <RecruitersGrid/>
             <Timeline />
             <Footer/>

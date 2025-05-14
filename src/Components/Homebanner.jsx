@@ -55,6 +55,7 @@ const HomeBanner = () => {
         <div className="banner-container">
           <img src={img1} alt="Slide 2" className="banner-video" />
           
+          
         </div>
       </div>
 
