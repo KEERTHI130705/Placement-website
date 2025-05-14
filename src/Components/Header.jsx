@@ -78,7 +78,7 @@ const Header = () => {
               </ScrollLink>
             ))}
             {/* Mobile Brochure Link */}
-            <a href={brochureDoc} target="_blank" rel="noopener noreferrer" className="mobile-nav-item" onClick={() => setIsOpen(false)}>
+            <a href="/Brochure.docx" target="_blank" rel="noopener noreferrer" className="mobile-nav-item" onClick={() => setIsOpen(false)}>
               Brochure
             </a>
           </nav>
