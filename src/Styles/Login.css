@@ -38,5 +38,11 @@
     align-items: center;
     background-color: #f8f9fa; /* optional: adds a subtle background */
   }
+  .toggle-link {
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
   
   
