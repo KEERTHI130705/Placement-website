@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/Tpo_info.css"; // Import the CSS file
-import image from "../assets/image.png"; // Import the image
+import image from "../assets/college.png"; // Import the image
 
 const Tpo_info = () => {
   return (

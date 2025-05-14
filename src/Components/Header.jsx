@@ -54,9 +54,6 @@ const Header = () => {
           <nav className="mobile-nav">
             <RouterLink to="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>HOME</RouterLink>
             {[
-              { id: "tpo-info", label: "TPO INFO" },
-              { id: "why-recruit", label: "WHY RECRUIT" },
-              { id: "achievements", label: "ACHIEVEMENTS" },
               { id: "messages", label: "MESSAGES" },
               { id: "process", label: "PROCESS" },
               { id: "statistics", label: "STATISTICS" },
