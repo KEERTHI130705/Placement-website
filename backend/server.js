@@ -7,9 +7,6 @@ const db = new Database('credentials.db'); // Make sure this file exists
 
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
-
-
-
   
 // Route to validate username and password
 app.post('/validatePassword', (req, res) => {

@@ -24,6 +24,7 @@ const recruiters = [
 
 const RecruitersGrid = () => {
   return (
+    <section id="recruiters">
     <div className="recruiters-section">
       <h2 className="recruiters-title">Our Past Recruiters</h2>
       <div className="recruiters-grid">
@@ -39,6 +40,7 @@ const RecruitersGrid = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

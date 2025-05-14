@@ -21,7 +21,7 @@ const Header = () => {
         <nav className="nav">
           <RouterLink to="/" className="nav-item">Home</RouterLink>
           {[
-            { id: "achievements", label: "Achievements" },
+            // { id: "achievements", label: "Achievements" },
             { id: "messages", label: "Messages" },
             { id: "process", label: "Timeline" },
             { id: "statistics", label: "Statistics" },
