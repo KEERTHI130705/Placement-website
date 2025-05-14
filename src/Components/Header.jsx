@@ -4,6 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "../Styles/Header.css";
 import logo from "../assets/logo1.png";
+ 
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,8 +21,7 @@ const Header = () => {
         {/* Desktop Menu */}
         <nav className="nav">
           <RouterLink to="/" className="nav-item">Home</RouterLink>
-          {[
-            // { id: "achievements", label: "Achievements" },
+          {[ 
             { id: "messages", label: "Messages" },
             { id: "process", label: "Timeline" },
             { id: "statistics", label: "Statistics" },
@@ -40,6 +40,10 @@ const Header = () => {
               {item.label}
             </ScrollLink>
           ))}
+          {/* Brochure Link */}
+          <a href= "/Brochure.docx"target="_blank" rel="noopener noreferrer" className="nav-item">
+            Brochure
+          </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -53,7 +57,7 @@ const Header = () => {
         <div className="mobile-menu">
           <nav className="mobile-nav">
             <RouterLink to="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>HOME</RouterLink>
-            {[
+            {[ 
               { id: "messages", label: "MESSAGES" },
               { id: "process", label: "PROCESS" },
               { id: "statistics", label: "STATISTICS" },
@@ -73,6 +77,10 @@ const Header = () => {
                 {item.label}
               </ScrollLink>
             ))}
+            {/* Mobile Brochure Link */}
+            <a href={brochureDoc} target="_blank" rel="noopener noreferrer" className="mobile-nav-item" onClick={() => setIsOpen(false)}>
+              Brochure
+            </a>
           </nav>
 
           <img src={logo} alt="UCEOU Logo" className="logo-img" />
