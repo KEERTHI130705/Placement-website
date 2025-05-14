@@ -15,14 +15,7 @@ const Tpo_info = () => {
         <div className="tpo-info">
           <h2>Training & Placement Officer</h2>
           <p>
-            The Training & Placement Office (TPO) is committed to bridging the gap
-            between students and recruiters by providing exceptional opportunities
-            for placements and internships.
-          </p>
-          <p>
-            Our mission is to facilitate the professional growth of students by
-            conducting training sessions, career guidance programs, and industry
-            interactions.
+            University College of Engineering, Osmania University, has a dedicated Training and Placement Office (TPO) that plays a pivotal role in preparing students for the competitive job market. The TPO’s primary objective is to bridge the gap between academia and industry, ensuring that students are equipped with the skills and knowledge necessary to secure best careers, and provide industry interaction for training/ Internship/ campus placements etc., counselling session for higher education and Entreprenurial opportunities.
           </p>
         </div>
       </div>

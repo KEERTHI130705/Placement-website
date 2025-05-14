@@ -31,8 +31,8 @@ const HomeBanner = () => {
           hiring process.
         </p>
         <div className="banner-buttons">
-          <button className="btn" onClick={handleStudentClick}>👨‍🎓 Student</button>
-          <button className="btn" onClick={handleRecruiterClick}>💼 Recruiter</button>
+          <button className="btn" onClick={handleStudentClick}>Student</button>
+          <button className="btn" onClick={handleRecruiterClick}>Recruiter</button>
         </div>
       </div>
     </div>
