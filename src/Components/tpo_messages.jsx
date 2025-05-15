@@ -5,14 +5,14 @@ import "../Styles/tpo_messages.css";  // Import CSS
 
 const messages = [
   {
-    name: "Dr. John Doe",
-    designation: "TPO Head",
+    name: "Prof Chandra Shekhar",
+    designation: "Prinicipal,UCEOU",
     content: "We are committed to providing the best opportunities for our students...",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg"
   },
   {
-    name: "Prof. Jane Smith",
-    designation: "Placement Coordinator",
+    name: "Dr.D.Suman",
+    designation: "Training & Placement Officer",
     content: "Our goal is to bridge the gap between students and industry...",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Placeholder_Person.jpg"
   }
@@ -54,3 +54,6 @@ const MessagesSection = () => {
 };
 
 export default MessagesSection;
+
+
+

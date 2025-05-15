@@ -41,7 +41,7 @@ const Header = () => {
             </ScrollLink>
           ))}
           {/* Brochure Link */}
-          <a href= "/Brochure.docx"target="_blank" rel="noopener noreferrer" className="nav-item">
+          <a href= "/"target="_blank" rel="noopener noreferrer" className="nav-item">
             Brochure
           </a>
         </nav>
@@ -78,7 +78,7 @@ const Header = () => {
               </ScrollLink>
             ))}
             {/* Mobile Brochure Link */}
-            <a href={brochureDoc} target="_blank" rel="noopener noreferrer" className="mobile-nav-item" onClick={() => setIsOpen(false)}>
+            <a href="/" target="_blank" rel="noopener noreferrer" className="mobile-nav-item" onClick={() => setIsOpen(false)}>
               Brochure
             </a>
           </nav>
