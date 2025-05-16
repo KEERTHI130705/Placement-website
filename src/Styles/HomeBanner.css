@@ -2,7 +2,7 @@
 .banner-container {
   position: relative;
   width: 100%;
-  height: 50vh; /* You can adjust if needed */
+  height: 80vh; /* You can adjust if needed */
   display: flex;
   align-items: center;
   justify-content: center;
