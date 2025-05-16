@@ -35,11 +35,11 @@ const Footer = () => {
             <h3 className="footer-subheading">Contact</h3>
             <p>
               Email:{" "}
-              <a href="mailto:placement@xyzcollege.edu" className="footer-link">
-                placement@xyzcollege.edu
+              <a href="mailto:osmaniaplacement@gmail.com" className="footer-link">
+                osmaniaplacement@gmail.com
               </a>
             </p>
-            <p>Phone: +91-12345-67890</p>
+            <p>Phone: +91 8331997313</p>
           </div>
 
           {/* Divider */}
