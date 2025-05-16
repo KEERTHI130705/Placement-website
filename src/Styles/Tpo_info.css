@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Matches your color scheme */
+    background: linear-gradient(135deg, #e0f2ff, #467fb1);
     padding: 50px 0;
   }
   
@@ -22,14 +22,15 @@
   }
   
   .tpo-info {
-    color:rgb(93, 0, 255);
+    color:rgb(13, 5, 27);
     max-width: 500px;
   }
   
   .tpo-info h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-    color: #fa3415; /* Gold color for highlight */
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
   }
   
   .tpo-info p {
