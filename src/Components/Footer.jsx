@@ -64,6 +64,7 @@ const Footer = () => {
       {/* Bottom line */}
       <div className="footer-bottom">
         © {new Date().getFullYear()} UCEOU. All rights reserved.
+        Made by CSE Students, UCEOU
       </div>
     </footer>
   );
