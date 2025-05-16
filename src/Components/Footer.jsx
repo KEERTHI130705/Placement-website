@@ -39,7 +39,7 @@ const Footer = () => {
                 osmaniaplacement@gmail.com
               </a>
             </p>
-            <p>Phone: +91 8331997313</p>
+            <p>Phone: +91-83319-97313</p>
           </div>
 
           {/* Divider */}
