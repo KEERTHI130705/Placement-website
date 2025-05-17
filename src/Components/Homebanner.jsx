@@ -10,13 +10,10 @@ import img3 from "../assets/carousel-imgs/3.jpeg";
 import img4 from "../assets/carousel-imgs/4.jpeg";
 import img5 from "../assets/carousel-imgs/5.jpeg";
 import img6 from "../assets/carousel-imgs/6.jpeg";
-import img7 from "../assets/carousel-imgs/7.jpeg";
-
 
 const HomeBanner = () => {
   const navigate = useNavigate();
 
-  // const handleStudentClick = () => navigate("/student-login");
   const handleStudentClick = () => {
     window.open("https://uceou.in/EAF/Student/Default", "_blank");
   };
@@ -32,91 +29,54 @@ const HomeBanner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    fade: true,
+    cssEase: 'linear'
   };
 
   return (
-    <Slider {...settings}>
-      {/* Slide 1: Video */}
-      <div>
-        <div className="banner-container">
-          <video className="banner-video" autoPlay loop muted playsInline>
-            <source src={videoSrc} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="overlay"></div>
-          <div className="banner-content">
-            <h1 className="banner-title">
-              One Platform for <span className="highlight">Placements</span> &{" "}
-              <span className="highlight">Internships</span>
-            </h1>
-            <p className="banner-text">
-              Connecting students, recruiters, and coordinators to streamline the hiring process.
-            </p>
-            {<div className="banner-buttons">
-              <button className="btn" onClick={handleStudentClick}>Student</button>
-              {/* <button className="btn" onClick={handleRecruiterClick}>Recruiter</button> */}
-            </div> }
+    <div className="home-banner-wrapper">
+      <Slider {...settings}>
+        {/* Video Slide */}
+        <div className="slide-container">
+          <div className="banner-container">
+            <video className="banner-media" autoPlay loop muted playsInline>
+              <source src={videoSrc} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="overlay dark-overlay"></div>
+            <div className="banner-content">
+              <h1 className="banner-title">
+                One Platform for <span className="highlight">Placements</span> &{" "}
+                <span className="highlight">Internships</span>
+              </h1>
+              <p className="banner-text">
+                Connecting students, recruiters, and coordinators to streamline the hiring process.
+              </p>
+              <div className="banner-buttons">
+                <button className="btn student-btn" onClick={handleStudentClick}>Student Login</button>
+                {/* <button className="btn recruiter-btn" onClick={handleRecruiterClick}>Recruiter Login</button> */}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Slide 2: Image */}
-      <div>
-        <div className="banner-container">
-          <img src={img1} alt="Slide 2" className="banner-video" />
-          
-          
-        </div>
-      </div>
-
-      {/* Slide 3: Another Image */}
-      <div>
-        <div className="banner-container">
-          <img src={img2} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-
-            {/* Slide 3: Another Image */}
-            <div>
-        <div className="banner-container">
-          <img src={img3} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-
-            {/* Slide 3: Another Image */}
-            <div>
-        <div className="banner-container">
-          <img src={img4} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-
-            {/* Slide 3: Another Image */}
-            <div>
-        <div className="banner-container">
-          <img src={img5} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-
-            {/* Slide 3: Another Image */}
-            <div>
-        <div className="banner-container">
-          <img src={img6} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-
-            {/* Slide 3: Another Image */}
-            <div>
-        <div className="banner-container">
-          <img src={img7} alt="Slide 3" className="banner-video" />
-         
-        </div>
-      </div>
-    </Slider>
+        {/* Image Slides */}
+        {[img1, img2, img3, img4, img5, img6].map((img, index) => (
+          <div className="slide-container" key={index}>
+            <div className="banner-container image-slide">
+              <img 
+                src={img} 
+                alt={`Campus Activity ${index + 1}`} 
+                className="centered-image"
+              />
+              <div className="overlay blue-overlay"></div>
+              <div className="banner-content">
+              </div>
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
