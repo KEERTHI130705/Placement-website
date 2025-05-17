@@ -4,8 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 import "../Styles/HomeBanner.css";
 import videoSrc from "../assets/banner1.mp4";
-import img1 from "../assets/MainBanner.jpg";
-import img2 from "../assets/VcCongratsBanner.png";
+import img1 from "../assets/carousel-imgs/1.jpeg";
+import img2 from "../assets/carousel-imgs/2.jpeg";
+import img3 from "../assets/carousel-imgs/3.jpeg";
+import img4 from "../assets/carousel-imgs/4.jpeg";
+import img5 from "../assets/carousel-imgs/5.jpeg";
+import img6 from "../assets/carousel-imgs/6.jpeg";
+import img7 from "../assets/carousel-imgs/7.jpeg";
+
 
 const HomeBanner = () => {
   const navigate = useNavigate();
@@ -67,6 +73,46 @@ const HomeBanner = () => {
       <div>
         <div className="banner-container">
           <img src={img2} alt="Slide 3" className="banner-video" />
+         
+        </div>
+      </div>
+
+            {/* Slide 3: Another Image */}
+            <div>
+        <div className="banner-container">
+          <img src={img3} alt="Slide 3" className="banner-video" />
+         
+        </div>
+      </div>
+
+            {/* Slide 3: Another Image */}
+            <div>
+        <div className="banner-container">
+          <img src={img4} alt="Slide 3" className="banner-video" />
+         
+        </div>
+      </div>
+
+            {/* Slide 3: Another Image */}
+            <div>
+        <div className="banner-container">
+          <img src={img5} alt="Slide 3" className="banner-video" />
+         
+        </div>
+      </div>
+
+            {/* Slide 3: Another Image */}
+            <div>
+        <div className="banner-container">
+          <img src={img6} alt="Slide 3" className="banner-video" />
+         
+        </div>
+      </div>
+
+            {/* Slide 3: Another Image */}
+            <div>
+        <div className="banner-container">
+          <img src={img7} alt="Slide 3" className="banner-video" />
          
         </div>
       </div>
