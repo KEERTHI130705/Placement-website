@@ -10,7 +10,11 @@ import img2 from "../assets/VcCongratsBanner.png";
 const HomeBanner = () => {
   const navigate = useNavigate();
 
-  const handleStudentClick = () => navigate("/student-login");
+  // const handleStudentClick = () => navigate("/student-login");
+  const handleStudentClick = () => {
+    window.open("https://uceou.in/EAF/Student/Default", "_blank");
+  };
+  
   const handleRecruiterClick = () => navigate("/recruiter-login");
 
   const settings = {
@@ -42,10 +46,10 @@ const HomeBanner = () => {
             <p className="banner-text">
               Connecting students, recruiters, and coordinators to streamline the hiring process.
             </p>
-            {/* <div className="banner-buttons">
+            {<div className="banner-buttons">
               <button className="btn" onClick={handleStudentClick}>Student</button>
-              <button className="btn" onClick={handleRecruiterClick}>Recruiter</button>
-            </div> */}
+              {/* <button className="btn" onClick={handleRecruiterClick}>Recruiter</button> */}
+            </div> }
           </div>
         </div>
       </div>
