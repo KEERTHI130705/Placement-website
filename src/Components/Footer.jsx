@@ -36,7 +36,7 @@ const Footer = () => {
             <p>
               Email:{" "}
               <a href="mailto:osmaniaplacement@gmail.com" className="footer-link">
-              osmaniaplacement@gmail.com
+                osmaniaplacement@gmail.com
               </a>
             </p>
             <p>Phone: +91-83319-97313</p>
@@ -63,7 +63,8 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Made by CSE UCEOU students.
+        © {new Date().getFullYear()} UCEOU. All rights reserved.
+        Made by CSE Students, UCEOU
       </div>
     </footer>
   );
