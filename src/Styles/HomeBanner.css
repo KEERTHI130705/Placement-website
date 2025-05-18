@@ -238,3 +238,8 @@
     gap: 12px;
   }
 }
+@media (max-width: 768px) {
+  .slide-container {
+    margin-top: 60px; /* Adjust this value as needed */
+  }
+}
