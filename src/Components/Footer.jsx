@@ -56,7 +56,7 @@ const Footer = () => {
               ouceplacements@osmania.ac.in
               </a>
             </p>
-            <p>Phone: +91-98765-43210</p>
+            <p>Phone: +91-88978-55138</p>
           </div>
         </div>
       </div>
