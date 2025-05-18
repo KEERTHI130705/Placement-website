@@ -17,8 +17,12 @@ const Header = () => {
          <a href="https://uceou.edu/" target="_blank" rel="noopener noreferrer">
           <img src={logo} alt="UCEOU Logo" className="logo-img" />
           </a>
-
-          <span className="logo-text">Training & Placement Office</span>
+          <div className="logo-text-container">
+      <span className="logo-text">Training & Placement Office</span>
+      <span className="logo-subtext">
+        University College of Engineering, Osmania University
+      </span>
+    </div>
         </div>
 
         {/* Desktop Menu */}
