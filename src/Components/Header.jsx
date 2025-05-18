@@ -93,7 +93,7 @@ const Header = () => {
             </a>
           </nav>
 
-          <img src={logo} alt="UCEOU Logo" className="logo-img" />
+       
         </div>
       )}
     </header>
