@@ -1,4 +1,3 @@
-/* Header.css */
 .header {
   background-color: rgba(56, 129, 211, 0.96);
   color: white;
@@ -44,40 +43,6 @@
   white-space: nowrap;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .logo {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 6px;
-    padding-left: 12px;
-  }
-
-  .logo-img {
-    width: 50px;
-  }
-
-  .logo-text {
-    font-size: 1.2rem;
-  }
-
-  .logo-subtext {
-    font-size: 0.9rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .navbar a {
-    font-size: 1rem;
-  }
-}
-
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -86,7 +51,7 @@
   justify-content: space-between;
   padding: 18px 32px;
   box-sizing: border-box;
-  flex-wrap: wrap; /* Allow wrapping on smaller widths */
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -95,7 +60,7 @@
   text-decoration: none;
   transition: transform 0.3s ease;
   gap: 12px;
-  flex-shrink: 0; /* Prevent logo shrinking */
+  flex-shrink: 0;
 }
 
 .logo:hover,
@@ -116,7 +81,7 @@
   color: white;
   letter-spacing: 0.8px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  white-space: nowrap; /* Prevent line break */
+  white-space: nowrap;
 }
 
 .nav {
@@ -124,8 +89,8 @@
   gap: 40px;
   flex-grow: 1;
   justify-content: flex-end;
-  flex-wrap: wrap; /* Allow wrapping on smaller widths */
-  min-width: 0; /* Prevent overflow */
+  flex-wrap: wrap; 
+  min-width: 0;
 }
 
 .nav-item {
@@ -197,8 +162,8 @@
   transition: all 0.4s cubic-bezier(0.32, 0.72, 0, 1);
   backdrop-filter: blur(16px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  z-index: 49; /* Below header */
+  overflow-y: auto;
+  z-index: 49;
 }
 
 .mobile-nav {
@@ -227,7 +192,6 @@
   outline: none;
 }
 
-/* Avatar styles */
 .avatar-container {
   display: flex;
   align-items: center;
@@ -248,10 +212,37 @@
   white-space: nowrap;
 }
 
-/* Responsive Design */
+@media (max-width: 810px) {
+  .logo {
+    flex-direction: wrap;
+    align-items: flex-start;
+    gap: 6px;
+    padding-left: 12px;
+  }
 
-/* Small screens */
-@media (max-width: 768px) {
+  .logo-img {
+    width: 50px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .logo-subtext {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+  
   .nav {
     display: none;
   }
@@ -263,14 +254,11 @@
   .container {
     padding: 16px 24px;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
   .logo-img {
-    height: 56px;
-  }
-
-  .logo-text {
-    font-size: 1.3rem;
+    height: 50px;
   }
 
   .avatar-container {
@@ -278,10 +266,9 @@
   }
 }
 
-/* Very small screens (phones in portrait) */
 @media (max-width: 400px) {
-  .logo-text {
-    font-size: 1.1rem;
+  .logo-text, .logo-subtext {
+    display: none;
   }
 
   .menu-button {
@@ -304,7 +291,6 @@
   }
 }
 
-/* Large screens */
 @media (min-width: 1600px) {
   .container {
     max-width: 1440px;
