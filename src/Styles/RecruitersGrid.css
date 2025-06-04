@@ -71,7 +71,6 @@
     animation: scroll-left 90s linear infinite;
     width: max-content;
   }
-  
   .recruiter-card {
     display: flex;
     flex-direction: column;

@@ -11,31 +11,28 @@ import RecruiterLogin from "./Components/RecruiterLogin";
 import Footer from "./Components/Footer";
 import RecruitersGrid from "./Components/RecruitersGrid";
 import Statistics from "./Components/Statistics";
+import ContactForm from "./Components/contactform.jsx";
 
 function App() {
   return (
     <Router>
       <Header />
-      <div className="content-wrapper">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HomeBanner />
-                <Tpo_info />
-                <MessagesSection />
-                <Statistics />
-                <RecruitersGrid />
-                <Timeline />
-                <Footer />
-              </>
-            }
-          />{" "}
-          {/* <Route path="/student-login" element={<StudentLogin />} />
-        <Route path="/recruiter-login" element={<RecruiterLogin />} /> */}
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <HomeBanner />
+            <Tpo_info />
+            <MessagesSection />
+            <Statistics />
+            <RecruitersGrid />
+            <Timeline />
+            <ContactForm />
+            <Footer />
+          </>
+        } />
+        {/* <Route path="/student-login" element={<StudentLogin />} /> */}
+        {/* <Route path="/recruiter-login" element={<RecruiterLogin />} /> */}
+      </Routes>
     </Router>
   );
 }
