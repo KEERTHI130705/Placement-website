@@ -28,7 +28,7 @@ import Deloitte from "../assets/logos/Deloitte.png";
 import Ediglobe from "../assets/logos/Ediglobe.png";
 import Emagia from "../assets/logos/Emagia.png";
 import EnneaLogo from "../assets/logos/Ennea.png";
-import Excelr from "../assets/logos/ExcelR.png";
+import Excelr from "../assets/logos/Excelr.png";
 
 import GeAppliances from "../assets/logos/GeAppliances.png";
 import Grantley from "../assets/logos/Grantley.png";
