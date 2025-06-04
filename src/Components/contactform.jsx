@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../Styles/ContactForm.css';
 import Swal from 'sweetalert2';
 
-const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdlzPDhs-BZr6n6YJQlJDRvpHK0VolFFD5xitxw7IFYpcKmmw/formResponse";
+const GOOGLE_FORM_ACTION_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdlzPDhs-BZr6n6YJQlJDRvpHK0VolFFD5xitxw7IFYpcKmmw/formResponse";  //place the google formResponse url that is already created
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
