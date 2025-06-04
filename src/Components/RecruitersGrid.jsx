@@ -59,7 +59,7 @@ import Magnaquest from "../assets/logos/Magnaquest.png";
 import Medha from "../assets/logos/Medha.png";
 import Medtronic from "../assets/logos/Medtronic.png";
 import Moschip from "../assets/logos/Moschip.png";
-import Meslova from "../assets/logos/Meslova.png";
+import Meslova from "../assets/logos/meslova.png";
 
 import Ncc from "../assets/logos/Ncc.png";
 
