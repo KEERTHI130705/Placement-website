@@ -51,7 +51,6 @@ import jordan  from "../assets/logos/jordan.png";
 import KS from "../assets/logos/KS.png";
 import Khetpilot from "../assets/logos/Khetpilot.png";
 import Ki_tech from "../assets/logos/Ki_tech.png";
-import Kodnest from "../assets/logos/Kodnest.png";
 
 import lntLogo from "../assets/logos/lnt.png";
 
@@ -71,18 +70,14 @@ import PinnacleReliability from "../assets/logos/PinnacleReliability.png";
 import ProTeam from "../assets/logos/ProTeam.png";
 import Pythian from "../assets/logos/Pythian.png";
 
-import QSpiders from "../assets/logos/QSpiders.png";
 import Reliance_Industries from "../assets/logos/Reliance_Industries.png";
-import Rinex from "../assets/logos/RInex.png";
 
 import Schwing from "../assets/logos/Schwing.png";
 import Shapoorji from "../assets/logos/Shapoorji.png";
-import Smarted from "../assets/logos/Smarted.png";
 import Solix from "../assets/logos/Solix.png";
 import SusheeCoalMine from "../assets/logos/SusheeCoalMine.png";
 import swiggyLogo from "../assets/logos/swiggy.png";
 
-import Teachnook from "../assets/logos/Teachnook.png";
 import thomsonLogo from "../assets/logos/thomson.png";
 import Transgraph from "../assets/logos/Transgraph.png";
 import TejasNetwork from "../assets/logos/tejas_network.png";
@@ -145,7 +140,6 @@ const recruiters = [
   { name: "K&S Partners", logo: KS},
   { name: "Khetpilot Ai Agri Drone Tech Pvt Ltd", logo: Khetpilot},
   { name: "Ki-Tech Pvt Ltd", logo: Ki_tech},
-  { name: "Kodnest", logo: Kodnest},
 
   { name: "L&T", logo: lntLogo },
 
@@ -165,21 +159,16 @@ const recruiters = [
   { name: "Pro Team Serve ", logo: ProTeam},
   { name: "Pythian", logo: Pythian},
 
-  { name: "QSpiders", logo: QSpiders},
-
   { name: "Reliance Industries Limited", logo: Reliance_Industries},
-  { name: "Rinex", logo: Rinex },
-
+  
   { name: "Swiggy", logo: swiggyLogo },
   { name: "Schwing Stetter", logo: Schwing },
   { name: "Shapoorji Pallonji And Company Private Limited (E & C)", logo: Shapoorji },
-  { name: "Smarted", logo: Smarted },
   { name: "Solix Technologies", logo: Solix },
   { name: "Sushee Chandragupt Coal Mine", logo: SusheeCoalMine },
 
   { name: "Thomson Reuters", logo: thomsonLogo },
   { name: "Transgraph", logo: Transgraph},
-  { name: "Teachnook", logo: Teachnook},
   { name: "Tejas Networks", logo: TejasNetwork},
   { name: "Tech Mindsparc Innovations", logo: TechMindsparc},
 
