@@ -3,10 +3,10 @@ import "../Styles/RecruitersGrid.css";
 
 import Academor from "../assets/logos/Academor.png";
 import Aiken from "../assets/logos/Aiken.png";
-import amazonLogo from "../assets/logos/amazon.png";
+import Amazon from "../assets/logos/Amazon.png";
 import AmsOsram from "../assets/logos/AmsOsram.png";
 import Arcadislbi from "../assets/logos/ArcadisIbi.png";
-import arcesium  from "../assets/logos/arcesium.png";
+import arcesium  from "../assets/logos/Arcesium.png";
 import Ariqt from "../assets/logos/Ariqt.png";
 import AsianPaintsLogo from "../assets/logos/AsianPaints.png";
 import Avana from "../assets/logos/Avana.png";
@@ -15,8 +15,8 @@ import BranicLogo from "../assets/logos/Branic.png";
 import Bel from "../assets/logos/Bel.png";
 import Bgr from "../assets/logos/Bgr.png";
 
-import CandescentLogo from "../assets/logos/candescent.png";
-import cognizantLogo from "../assets/logos/cognizant.png";
+import CandescentLogo from "../assets/logos/Candescent.png";
+import cognizantLogo from "../assets/logos/Cognizant.png";
 import Coramandal from "../assets/logos/Coramandal.png";
 import CtrlsCloudLogo from "../assets/logos/Ctrls&Cloud4c.png";
 
@@ -97,7 +97,7 @@ import Zessta from "../assets/logos/Zessta.png";
 const recruiters = [
   { name: "Academor", logo: Academor },
   { name: "Aiken Healthcare", logo: Aiken },
-  { name: "Amazon", logo: amazonLogo },
+  { name: "Amazon", logo: Amazon },
   { name: "Ams Osram", logo: AmsOsram },
   { name: "Arcadis- Ibi", logo: Arcadislbi },
   { name: "Arcesium", logo: arcesium },

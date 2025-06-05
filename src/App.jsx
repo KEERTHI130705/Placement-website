@@ -11,7 +11,7 @@ import RecruiterLogin from "./Components/RecruiterLogin";
 import Footer from "./Components/Footer";
 import RecruitersGrid from "./Components/RecruitersGrid";
 import Statistics from "./Components/Statistics";
-import ContactForm from "./Components/contactform.jsx";
+import ContactForm from "./Components/ContactForm.jsx";
 
 function App() {
   return (
