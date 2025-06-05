@@ -73,7 +73,7 @@ import Pythian from "../assets/logos/Pythian.png";
 
 import QSpiders from "../assets/logos/QSpiders.png";
 import Reliance_Industries from "../assets/logos/Reliance_Industries.png";
-import Rinex from "../assets/logos/Rinex.png";
+import Rinex from "../assets/logos/RInex.png";
 
 import Schwing from "../assets/logos/Schwing.png";
 import Shapoorji from "../assets/logos/Shapoorji.png";
