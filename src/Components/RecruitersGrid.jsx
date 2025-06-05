@@ -3,7 +3,7 @@ import "../Styles/RecruitersGrid.css";
 
 import Academor from "../assets/logos/Academor.png";
 import Aiken from "../assets/logos/Aiken.png";
-import amazonLogo from "../assets/logos/amazon.png";
+import Amazon from "../assets/logos/amazon.png";
 import AmsOsram from "../assets/logos/AmsOsram.png";
 import Arcadislbi from "../assets/logos/ArcadisIbi.png";
 import arcesium  from "../assets/logos/arcesium.png";
@@ -28,7 +28,7 @@ import Deloitte from "../assets/logos/Deloitte.png";
 import Ediglobe from "../assets/logos/Ediglobe.png";
 import Emagia from "../assets/logos/Emagia.png";
 import EnneaLogo from "../assets/logos/Ennea.png";
-import Excelr from "../assets/logos/ExcelR.png";
+import Excelr from "../assets/logos/Excelr.png";
 
 import GeAppliances from "../assets/logos/GeAppliances.png";
 import Grantley from "../assets/logos/Grantley.png";
@@ -59,7 +59,7 @@ import Magnaquest from "../assets/logos/Magnaquest.png";
 import Medha from "../assets/logos/Medha.png";
 import Medtronic from "../assets/logos/Medtronic.png";
 import Moschip from "../assets/logos/Moschip.png";
-import Meslova from "../assets/logos/Meslova.png";
+import Meslova from "../assets/logos/meslova.png";
 
 import Ncc from "../assets/logos/Ncc.png";
 
@@ -73,7 +73,7 @@ import Pythian from "../assets/logos/Pythian.png";
 
 import QSpiders from "../assets/logos/QSpiders.png";
 import Reliance_Industries from "../assets/logos/Reliance_Industries.png";
-import Rinex from "../assets/logos/Rinex.png";
+import Rinex from "../assets/logos/RInex.png";
 
 import Schwing from "../assets/logos/Schwing.png";
 import Shapoorji from "../assets/logos/Shapoorji.png";
@@ -97,7 +97,7 @@ import Zessta from "../assets/logos/Zessta.png";
 const recruiters = [
   { name: "Academor", logo: Academor },
   { name: "Aiken Healthcare", logo: Aiken },
-  { name: "Amazon", logo: amazonLogo },
+  { name: "Amazon", logo: Amazon },
   { name: "Ams Osram", logo: AmsOsram },
   { name: "Arcadis- Ibi", logo: Arcadislbi },
   { name: "Arcesium", logo: arcesium },
