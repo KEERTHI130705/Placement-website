@@ -105,9 +105,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Thanks to all contributors who have helped shape this project
-- Special thanks to the open source community
-- Built with ❤️ by [ASahithi2005](https://github.com/ASahithi2005)
+- Thanks to all contributors who have helped shape this project!
 
 ## 📞 Support
 
