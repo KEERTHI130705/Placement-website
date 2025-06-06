@@ -4,8 +4,8 @@ import '../Styles/activity.css';
 import img1 from '../assets/activity/picture1.jpg';
 import img2 from '../assets/activity/picture2.jpg';
 import img3 from '../assets/activity/picture3.jpg';
-import img4 from '../assets/activity/picture4.jpg';
-import img5 from '../assets/activity/picture5.jpg';
+import img4 from '../assets/activity/Picture4.jpg';
+import img5 from '../assets/activity/Picture5.jpg';
 
 const trainingData = [
   {
