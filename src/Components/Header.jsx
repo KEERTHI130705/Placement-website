@@ -1,23 +1,34 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "../Styles/Header.css";
 import logo from "../assets/logo1.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollNav = (id) => {
+    if (location.pathname !== "/") {
+      navigate(`/?scrollTo=${id}`);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        const offset = -70;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
+  };
 
   return (
     <header className="header">
       <div className="container">
-        {/* Logo - Routes to homepage */}
+        {/* Logo */}
         <div className="logo">
-          <a
-            href="https://uceou.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://uceou.edu/" target="_blank" rel="noopener noreferrer">
             <img src={logo} alt="UCEOU Logo" className="logo-img" />
           </a>
           <div className="logo-text-container">
@@ -30,37 +41,13 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="nav">
-          <RouterLink to="/" className="nav-item">
-            Home
-          </RouterLink>
-          {[
-            { id: "messages", label: "Messages" },
-            { id: "process", label: "Timeline" },
-            { id: "statistics", label: "Statistics" },
-            { id: "recruiters", label: "Recruiters" },
-            { id: "contact", label: "Contact" },
-          ].map((item) => (
-            <ScrollLink
-              key={item.id}
-              to={item.id}
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-70}
-              className="nav-item"
-            >
-              {item.label}
-            </ScrollLink>
-          ))}
-          {/* Brochure Link */}
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-item"
-          >
-            Brochure
-          </a>
+          <RouterLink to="/" className="nav-item">Home</RouterLink>
+          <button className="nav-item" onClick={() => handleScrollNav("messages")}>Messages</button>
+          <button className="nav-item" onClick={() => handleScrollNav("process")}>Timeline</button>
+          <button className="nav-item" onClick={() => handleScrollNav("statistics")}>Statistics</button>
+          <button className="nav-item" onClick={() => handleScrollNav("recruiters")}>Recruiters</button>
+          <RouterLink to="/activity" className="nav-item">Placements activities</RouterLink>
+          <button className="nav-item" onClick={() => handleScrollNav("contact")}>Contact</button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -73,44 +60,14 @@ const Header = () => {
       {isOpen && (
         <div className="mobile-menu">
           <nav className="mobile-nav">
-            <RouterLink
-              to="/"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              HOME
-            </RouterLink>
-            {[
-              { id: "messages", label: "MESSAGES" },
-              { id: "process", label: "PROCESS" },
-              { id: "statistics", label: "STATISTICS" },
-              { id: "recruiters", label: "RECRUITERS" },
-              { id: "contact", label: "CONTACT" },
-            ].map((item) => (
-              <ScrollLink
-                key={item.id}
-                to={item.id}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-70}
-                className="mobile-nav-item"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </ScrollLink>
-            ))}
-            {/* Mobile Brochure Link */}
-
-            <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              Brochure
-            </a>
+            <RouterLink to="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>HOME</RouterLink>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("messages")}>MESSAGES</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("process")}>PROCESS</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("statistics")}>STATISTICS</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("recruiters")}>RECRUITERS</button>
+            <RouterLink to="/activity" className="mobile-nav-item" onClick={() => setIsOpen(false)}>PLACEMENTS ACTIVITY</RouterLink>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("contact")}>CONTACT</button>
+            {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
           </nav>
         </div>
       )}
