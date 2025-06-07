@@ -11,7 +11,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
+<<<<<<< Updated upstream
         {/* Logo - Routes to homepage */}
+=======
+        {/* Logo{" "} */}
+>>>>>>> Stashed changes
         <div className="logo">
           <a
             href="https://uceou.edu/"
@@ -27,12 +31,12 @@ const Header = () => {
             </span>
           </div>
         </div>
-
         {/* Desktop Menu */}
         <nav className="nav">
           <RouterLink to="/" className="nav-item">
             Home
           </RouterLink>
+<<<<<<< Updated upstream
           {[
             { id: "messages", label: "Messages" },
             { id: "process", label: "Timeline" },
@@ -61,8 +65,39 @@ const Header = () => {
           >
             Brochure
           </a>
+=======
+          <button
+            className="nav-item"
+            onClick={() => handleScrollNav("messages")}
+          >
+            Messages
+          </button>
+          <button
+            className="nav-item"
+            onClick={() => handleScrollNav("process")}
+          >
+            Timeline
+          </button>
+          <button
+            className="nav-item"
+            onClick={() => handleScrollNav("statistics")}
+          >
+            Statistics
+          </button>
+          <button
+            className="nav-item"
+            onClick={() => handleScrollNav("recruiters")}
+          >
+            Recruiters
+          </button>
+          <RouterLink to="/activity" className="nav-item">
+            Placements activities
+          </RouterLink>
+          <RouterLink to="/ContactForm" className="nav-item">
+            Contact
+          </RouterLink>
+>>>>>>> Stashed changes
         </nav>
-
         {/* Mobile Menu Button */}
         <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -80,6 +115,7 @@ const Header = () => {
             >
               HOME
             </RouterLink>
+<<<<<<< Updated upstream
             {[
               { id: "messages", label: "MESSAGES" },
               { id: "process", label: "PROCESS" },
@@ -111,6 +147,47 @@ const Header = () => {
             >
               Brochure
             </a>
+=======
+            <button
+              className="mobile-nav-item"
+              onClick={() => handleScrollNav("messages")}
+            >
+              MESSAGES
+            </button>
+            <button
+              className="mobile-nav-item"
+              onClick={() => handleScrollNav("process")}
+            >
+              PROCESS
+            </button>
+            <button
+              className="mobile-nav-item"
+              onClick={() => handleScrollNav("statistics")}
+            >
+              STATISTICS
+            </button>
+            <button
+              className="mobile-nav-item"
+              onClick={() => handleScrollNav("recruiters")}
+            >
+              RECRUITERS
+            </button>
+            <RouterLink
+              to="/activity"
+              className="mobile-nav-item"
+              onClick={() => setIsOpen(false)}
+            >
+              PLACEMENTS ACTIVITY
+            </RouterLink>
+            <RouterLink
+              to="/ContactForm"
+              className="mobile-nav-item"
+              onClick={() => setIsOpen(false)}
+            >
+              CONTACT
+            </RouterLink>
+            {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
+>>>>>>> Stashed changes
           </nav>
         </div>
       )}
