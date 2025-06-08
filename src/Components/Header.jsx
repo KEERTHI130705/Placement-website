@@ -1,21 +1,32 @@
 import { useState } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import "../Styles/Header.css";
 import logo from "../assets/logo1.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleScrollNav = (id) => {
+    if (location.pathname !== "/") {
+      navigate(`/?scrollTo=${id}`);
+    } else {
+      const el = document.getElementById(id);
+      if (el) {
+        const offset = -70;
+        const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+    setIsOpen(false);
+  };
 
   return (
     <header className="header">
       <div className="container">
-<<<<<<< Updated upstream
-        {/* Logo - Routes to homepage */}
-=======
-        {/* Logo{" "} */}
->>>>>>> Stashed changes
+        {/* Logo */}
         <div className="logo">
           <a
             href="https://uceou.edu/"
@@ -31,41 +42,12 @@ const Header = () => {
             </span>
           </div>
         </div>
+
         {/* Desktop Menu */}
         <nav className="nav">
           <RouterLink to="/" className="nav-item">
             Home
           </RouterLink>
-<<<<<<< Updated upstream
-          {[
-            { id: "messages", label: "Messages" },
-            { id: "process", label: "Timeline" },
-            { id: "statistics", label: "Statistics" },
-            { id: "recruiters", label: "Recruiters" },
-            { id: "contact", label: "Contact" },
-          ].map((item) => (
-            <ScrollLink
-              key={item.id}
-              to={item.id}
-              smooth={true}
-              duration={500}
-              spy={true}
-              offset={-70}
-              className="nav-item"
-            >
-              {item.label}
-            </ScrollLink>
-          ))}
-          {/* Brochure Link */}
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-item"
-          >
-            Brochure
-          </a>
-=======
           <button
             className="nav-item"
             onClick={() => handleScrollNav("messages")}
@@ -96,8 +78,8 @@ const Header = () => {
           <RouterLink to="/ContactForm" className="nav-item">
             Contact
           </RouterLink>
->>>>>>> Stashed changes
         </nav>
+
         {/* Mobile Menu Button */}
         <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -115,39 +97,6 @@ const Header = () => {
             >
               HOME
             </RouterLink>
-<<<<<<< Updated upstream
-            {[
-              { id: "messages", label: "MESSAGES" },
-              { id: "process", label: "PROCESS" },
-              { id: "statistics", label: "STATISTICS" },
-              { id: "recruiters", label: "RECRUITERS" },
-              { id: "contact", label: "CONTACT" },
-            ].map((item) => (
-              <ScrollLink
-                key={item.id}
-                to={item.id}
-                smooth={true}
-                duration={500}
-                spy={true}
-                offset={-70}
-                className="mobile-nav-item"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </ScrollLink>
-            ))}
-            {/* Mobile Brochure Link */}
-
-            <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              Brochure
-            </a>
-=======
             <button
               className="mobile-nav-item"
               onClick={() => handleScrollNav("messages")}
@@ -187,7 +136,6 @@ const Header = () => {
               CONTACT
             </RouterLink>
             {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
->>>>>>> Stashed changes
           </nav>
         </div>
       )}
