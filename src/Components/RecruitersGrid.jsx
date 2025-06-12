@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/RecruitersGrid.css";
 
+import AMD from "../assets/logos/AMD.png";
 import Aiken from "../assets/logos/Aiken.png";
 import Amazon from "../assets/logos/amazon.png";
 import AmsOsram from "../assets/logos/AmsOsram.png";
@@ -85,6 +86,7 @@ import Zessta from "../assets/logos/Zessta.png";
 
 // Duplicate the list to make the scroll seamless
 const recruiters = [
+  { name: "AMD", logo: AMD },
   { name: "Aiken Healthcare", logo: Aiken },
   { name: "Amazon", logo: Amazon },
   { name: "Ams Osram", logo: AmsOsram },

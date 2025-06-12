@@ -10,7 +10,9 @@ import img3 from "../assets/carousel-imgs/3.jpeg";
 import img4 from "../assets/carousel-imgs/4.jpeg";
 import img5 from "../assets/carousel-imgs/5.jpeg";
 import img6 from "../assets/carousel-imgs/6.jpeg";
+import Companies from "../assets/carousel-imgs/Companies.jpeg";
 
+// ...existing code...
 const HomeBanner = () => {
   const navigate = useNavigate();
 
@@ -32,6 +34,9 @@ const HomeBanner = () => {
     fade: true,
     cssEase: 'linear'
   };
+
+  // Add Companies image to the carousel images array
+  const carouselImages = [Companies, img1, img2, img3, img4, img5, img6 ];
 
   return (
     <div className="home-banner-wrapper">
@@ -61,7 +66,7 @@ const HomeBanner = () => {
         </div>
 
         {/* Image Slides */}
-        {[img1, img2, img3, img4, img5, img6].map((img, index) => (
+        {carouselImages.map((img, index) => (
           <div className="slide-container" key={index}>
             <div className="banner-container image-slide">
               <img 
