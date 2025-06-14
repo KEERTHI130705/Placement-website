@@ -67,7 +67,6 @@ const Header = () => {
             <button className="mobile-nav-item" onClick={() => handleScrollNav("recruiters")}>RECRUITERS</button>
             <RouterLink to="/activity" className="mobile-nav-item" onClick={() => setIsOpen(false)}>PLACEMENTS ACTIVITY</RouterLink>
             <RouterLink to="/ContactForm" className="mobile-nav-item" onClick={() => setIsOpen(false)}>CONTACT</RouterLink>
-            {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
           </nav>
         </div>
       )}

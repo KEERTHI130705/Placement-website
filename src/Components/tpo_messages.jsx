@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import principal from "../assets/people/principal.jpg";
 import tpohead from "../assets/people/tpo-head.jpg";
-import "../Styles/tpo_messages.css"; // Updated CSS
+import "../Styles/tpo_messages.css";
 
 const messages = [
   {
@@ -47,6 +47,7 @@ const MessagesSection = () => {
                   src={message.image}
                   alt={message.name}
                   className="message-image"
+                  loading="lazy"
                 />
               </div>
               <div className="message-text">
