@@ -28,11 +28,7 @@ const Header = () => {
       <div className="container">
         {/* Logo */}
         <div className="logo">
-          <a
-            href="https://uceou.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://uceou.edu/" target="_blank" rel="noopener noreferrer">
             <img src={logo} alt="UCEOU Logo" className="logo-img" />
           </a>
           <div className="logo-text-container">
@@ -45,39 +41,13 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="nav">
-          <RouterLink to="/" className="nav-item">
-            Home
-          </RouterLink>
-          <button
-            className="nav-item"
-            onClick={() => handleScrollNav("messages")}
-          >
-            Messages
-          </button>
-          <button
-            className="nav-item"
-            onClick={() => handleScrollNav("process")}
-          >
-            Timeline
-          </button>
-          <button
-            className="nav-item"
-            onClick={() => handleScrollNav("statistics")}
-          >
-            Statistics
-          </button>
-          <button
-            className="nav-item"
-            onClick={() => handleScrollNav("recruiters")}
-          >
-            Recruiters
-          </button>
-          <RouterLink to="/activity" className="nav-item">
-            Placements activities
-          </RouterLink>
-          <RouterLink to="/ContactForm" className="nav-item">
-            Contact
-          </RouterLink>
+          <RouterLink to="/" className="nav-item">Home</RouterLink>
+          <button className="nav-item" onClick={() => handleScrollNav("messages")}>Messages</button>
+          <button className="nav-item" onClick={() => handleScrollNav("process")}>Timeline</button>
+          <button className="nav-item" onClick={() => handleScrollNav("statistics")}>Statistics</button>
+          <button className="nav-item" onClick={() => handleScrollNav("recruiters")}>Recruiters</button>
+          <RouterLink to="/activity" className="nav-item">Placements activities</RouterLink>
+          <RouterLink to="/ContactForm" className="nav-item">Contact</RouterLink>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -90,52 +60,13 @@ const Header = () => {
       {isOpen && (
         <div className="mobile-menu">
           <nav className="mobile-nav">
-            <RouterLink
-              to="/"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              HOME
-            </RouterLink>
-            <button
-              className="mobile-nav-item"
-              onClick={() => handleScrollNav("messages")}
-            >
-              MESSAGES
-            </button>
-            <button
-              className="mobile-nav-item"
-              onClick={() => handleScrollNav("process")}
-            >
-              PROCESS
-            </button>
-            <button
-              className="mobile-nav-item"
-              onClick={() => handleScrollNav("statistics")}
-            >
-              STATISTICS
-            </button>
-            <button
-              className="mobile-nav-item"
-              onClick={() => handleScrollNav("recruiters")}
-            >
-              RECRUITERS
-            </button>
-            <RouterLink
-              to="/activity"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              PLACEMENTS ACTIVITY
-            </RouterLink>
-            <RouterLink
-              to="/ContactForm"
-              className="mobile-nav-item"
-              onClick={() => setIsOpen(false)}
-            >
-              CONTACT
-            </RouterLink>
-            {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
+            <RouterLink to="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>HOME</RouterLink>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("messages")}>MESSAGES</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("process")}>PROCESS</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("statistics")}>STATISTICS</button>
+            <button className="mobile-nav-item" onClick={() => handleScrollNav("recruiters")}>RECRUITERS</button>
+            <RouterLink to="/activity" className="mobile-nav-item" onClick={() => setIsOpen(false)}>PLACEMENTS ACTIVITY</RouterLink>
+            <RouterLink to="/ContactForm" className="mobile-nav-item" onClick={() => setIsOpen(false)}>CONTACT</RouterLink>
           </nav>
         </div>
       )}
