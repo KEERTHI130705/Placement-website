@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/RecruitersGrid.css";
 
-import Academor from "../assets/logos/Academor.png";
+import AMD from "../assets/logos/AMD.png";
 import Aiken from "../assets/logos/Aiken.png";
 import Amazon from "../assets/logos/amazon.png";
 import AmsOsram from "../assets/logos/AmsOsram.png";
@@ -11,7 +11,6 @@ import Ariqt from "../assets/logos/Ariqt.png";
 import AsianPaintsLogo from "../assets/logos/AsianPaints.png";
 import Avana from "../assets/logos/Avana.png";
 
-import BranicLogo from "../assets/logos/Branic.png";
 import Bel from "../assets/logos/Bel.png";
 import Bgr from "../assets/logos/Bgr.png";
 
@@ -25,10 +24,8 @@ import darwinlogo from "../assets/logos/darwinbox.png";
 import DEShawLogo from "../assets/logos/DEShaw.png";
 import Deloitte from "../assets/logos/Deloitte.png";
 
-import Ediglobe from "../assets/logos/Ediglobe.png";
 import Emagia from "../assets/logos/Emagia.png";
 import EnneaLogo from "../assets/logos/Ennea.png";
-import Excelr from "../assets/logos/Excelr.png";
 
 import GeAppliances from "../assets/logos/GeAppliances.png";
 import Grantley from "../assets/logos/Grantley.png";
@@ -37,7 +34,6 @@ import HSBCLogo from "../assets/logos/HSBC.png";
 import Hyundai from "../assets/logos/Hyundai.png";
 import Hexagon from "../assets/logos/Hexagon.png";
 import Hugosave from "../assets/logos/Hugosave.png";
-import HyderabadRunners from "../assets/logos/HyderabadRunners.png";
 
 import infosysLogo from "../assets/logos/infosys.png";
 import Itc from "../assets/logos/Itc.png";
@@ -90,7 +86,7 @@ import Zessta from "../assets/logos/Zessta.png";
 
 // Duplicate the list to make the scroll seamless
 const recruiters = [
-  { name: "Academor", logo: Academor },
+  { name: "AMD", logo: AMD },
   { name: "Aiken Healthcare", logo: Aiken },
   { name: "Amazon", logo: Amazon },
   { name: "Ams Osram", logo: AmsOsram },
@@ -101,7 +97,6 @@ const recruiters = [
   { name: "Asian Paints", logo: AsianPaintsLogo},
 
   { name: "Bel", logo: Bel },
-  { name: "Branic Tech Solutions Pvt Ltd", logo: BranicLogo},
   { name: "Bgr Mining & Infra Limited", logo: Bgr },
 
   { name: "Candescent - Ncrvoyix", logo: CandescentLogo},
@@ -115,9 +110,7 @@ const recruiters = [
   { name: "Deloitte", logo: Deloitte},
 
   { name: "Ennea", logo: EnneaLogo},
-  { name: "Ediglobe", logo: Ediglobe},
   { name: "Emagia Corporation", logo: Emagia},
-  { name: "Excelr Edtech Pvt. Ltd", logo: Excelr},
 
   { name: "Ge Appliances", logo: GeAppliances},
   { name: "Grantley", logo: Grantley},
@@ -126,7 +119,6 @@ const recruiters = [
   { name: "Hyundai Motors(Be)", logo: Hyundai},
   { name: "Hexagon", logo: Hexagon},
   { name: "Hugosave", logo: Hugosave},
-  { name: "Hyderabad Runners", logo: HyderabadRunners},
 
   { name: "Infosys", logo: infosysLogo },
   { name: "ITC", logo: Itc},

@@ -47,7 +47,7 @@ const Header = () => {
           <button className="nav-item" onClick={() => handleScrollNav("statistics")}>Statistics</button>
           <button className="nav-item" onClick={() => handleScrollNav("recruiters")}>Recruiters</button>
           <RouterLink to="/activity" className="nav-item">Placements activities</RouterLink>
-          <button className="nav-item" onClick={() => handleScrollNav("contact")}>Contact</button>
+          <RouterLink to="/ContactForm" className="nav-item">Contact</RouterLink>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -66,8 +66,7 @@ const Header = () => {
             <button className="mobile-nav-item" onClick={() => handleScrollNav("statistics")}>STATISTICS</button>
             <button className="mobile-nav-item" onClick={() => handleScrollNav("recruiters")}>RECRUITERS</button>
             <RouterLink to="/activity" className="mobile-nav-item" onClick={() => setIsOpen(false)}>PLACEMENTS ACTIVITY</RouterLink>
-            <button className="mobile-nav-item" onClick={() => handleScrollNav("contact")}>CONTACT</button>
-            {/* <a href="/" className="mobile-nav-item" onClick={() => setIsOpen(false)}>Brochure</a> */}
+            <RouterLink to="/ContactForm" className="mobile-nav-item" onClick={() => setIsOpen(false)}>CONTACT</RouterLink>
           </nav>
         </div>
       )}

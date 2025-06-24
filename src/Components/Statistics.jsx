@@ -12,13 +12,6 @@ const Statistics = () => {
         <img src={img1} alt="Stat 1" />
         <img src={img2} alt="Stat 2" />
       </div>
-      
-      {/* More Info Button */}
-      <div className="more-info-container">
-        <a href="/PlacementStats.docx" target="_blank" rel="noopener noreferrer" className="more-info-button">
-          More Info
-        </a>
-      </div>
     </section>
   );
 };

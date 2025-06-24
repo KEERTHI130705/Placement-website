@@ -40,7 +40,6 @@ const HomePage = () => {
       <div id="process"><Timeline /></div>
       <div id="statistics"><Statistics /></div> 
       <div id="recruiters"><RecruitersGrid /></div>
-      <div id="contact"><ContactForm /></div>
       <Footer />
     </>
   );
@@ -53,6 +52,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/activity" element={<Activity />} />
+        <Route path="/contactform" element={<ContactForm />} />
       </Routes>
     </Router>
   );
