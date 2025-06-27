@@ -44,7 +44,7 @@
   
   
   .recruiter-name {
-    font-size: 0.9rem;
+    font-size: 1.23rem;
     color: #555;
   }
 
@@ -89,12 +89,7 @@
     object-fit: contain;
     margin-bottom: 10px;
   }
-  
-  .recruiter-name {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
+
   @keyframes scroll-left {
     0% {
       transform: translateX(0);

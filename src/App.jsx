@@ -22,12 +22,10 @@ const HomePage = () => {
     const section = params.get("scrollTo");
 
     if (section) {
-      // Delay to allow component to render
       setTimeout(() => {
         scrollToSection(section);
       }, 300);
-
-      // Clean up URL
+      
       navigate("/", { replace: true });
     }
   }, [location, navigate]);

@@ -12,7 +12,6 @@ import img5 from "../assets/carousel-imgs/5.jpeg";
 import img6 from "../assets/carousel-imgs/6.jpeg";
 import Companies from "../assets/carousel-imgs/Companies.jpeg";
 
-// ...existing code...
 const HomeBanner = () => {
   const navigate = useNavigate();
 
@@ -35,13 +34,11 @@ const HomeBanner = () => {
     cssEase: 'linear'
   };
 
-  // Add Companies image to the carousel images array
   const carouselImages = [Companies, img1, img2, img3, img4, img5, img6 ];
 
   return (
     <div className="home-banner-wrapper">
       <Slider {...settings}>
-        {/* Video Slide */}
         <div className="slide-container">
           <div className="banner-container">
             <video className="banner-media" autoPlay loop muted playsInline>
@@ -59,13 +56,11 @@ const HomeBanner = () => {
               </p>
               <div className="banner-buttons">
                 <button className="btn student-btn" onClick={handleStudentClick}>Student Login</button>
-                {/* <button className="btn recruiter-btn" onClick={handleRecruiterClick}>Recruiter Login</button> */}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Image Slides */}
         {carouselImages.map((img, index) => (
           <div className="slide-container" key={index}>
             <div className="banner-container image-slide">
