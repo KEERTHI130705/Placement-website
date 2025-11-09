@@ -1,17 +1,26 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import principal from "../assets/people/principal.jpg";
 import tpohead from "../assets/people/tpo-head.jpg";
+import vc from "../assets/people/vc.jpg";
 import "../Styles/tpo_messages.css";
 
 const messages = [
   {
-    name: "Prof Chandra Shekhar",
+    name: "Prof. Chandra Shekhar",
     designation: "Principal, UCEOU",
     content:
       "We take pride in shaping students into competent, confident professionals ready to contribute meaningfully to the industry. Our curriculum, combined with hands-on training and dedicated faculty, ensures our graduates are job-ready and adaptable. To recruiters, we offer a pool of talented individuals prepared to meet your organizational goals. To students, I encourage you to pursue excellence with integrity and passion.",
     image: principal,
+  },
+  {
+    name: "Prof. Kumar Molugaram",
+    designation: "Vice Chancellor, UCEOU",
+    content:
+      "We take immense pride in nurturing talented engineers with strong technical skills, integrity, and adaptability. Through rigorous academics, hands-on training, and industry exposure, our students are prepared to meet the evolving demands of the professional world. We invite recruiters to explore this pool of capable, driven individuals and partner with us in fostering mutual growth and innovation.",
+    image: vc,
   },
   {
     name: "Dr. D. Suman",
@@ -23,12 +32,41 @@ const messages = [
 ];
 
 const MessagesSection = () => {
+  // Custom arrow components
+  const CustomPrevArrow = (onClickHandler, hasPrev, label) =>
+    hasPrev && (
+      <button
+        type="button"
+        onClick={onClickHandler}
+        title={label}
+        className="carousel-arrow carousel-prev-arrow"
+        aria-label="Previous message"
+      >
+        <ChevronLeft size={32} />
+      </button>
+    );
+
+  const CustomNextArrow = (onClickHandler, hasNext, label) =>
+    hasNext && (
+      <button
+        type="button"
+        onClick={onClickHandler}
+        title={label}
+        className="carousel-arrow carousel-next-arrow"
+        aria-label="Next message"
+      >
+        <ChevronRight size={32} />
+      </button>
+    );
+
   return (
     <section id="messages" className="messages-section">
-      <h2 className="messages-heading">Messages from TPO</h2>{" "}
+      <h2 className="messages-heading">Messages from TPO</h2>
       <div className="carousel-container">
         <Carousel
-          showArrows={false}
+          showArrows={true}
+          renderArrowPrev={CustomPrevArrow}
+          renderArrowNext={CustomNextArrow}
           autoPlay={true}
           infiniteLoop={true}
           showThumbs={false}
